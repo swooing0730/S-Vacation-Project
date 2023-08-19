@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="qnada.css">
+    <title>U M B</title>
+</head>
+<body>
+    <header id="header">
+        <img src="img/logo.png" alt="logo" id="logo">
+        <div class="total">
+            <h1>U M B</h1>
+            <form id="login-form">
+                <input type="text" id="id" placeholder="ID">
+                <input type="password" id="password" placeholder="PASSWORD"> <br>
+                <input type="checkbox" id="check">아이디 저장하기
+                <input type="submit" id="btn" value="Log In">
+            </form>
+        </div>
+    </header>
+    <nav>
+        <a href="#예약"> <input type="submit" id="btn" value="예약" > </a> <br>
+        <a href="#소통"><input type="submit" id="btn" value="소통"> </a> <br>
+        <input type="submit" id="btn" value="스케줄표">
+    </nav>
+    <article>
+        <img src="img/main.png" alt="main" width="87%" id="main">
+    </article>
+    <article>
+        <a id="예약"></a><H3>예약 접수</H3>
+        <form id="예약" method="get" action="form_app.js">
+            성명 : <input type="text" name="p_name"/> <br>
+            전화 : <input type="tel" name="p_tel" placeholder="000-0000-0000"
+            pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" /> <br>
+            이메일 : <input type="email" name="p_mail" placeholder="@**.***"/>
+            <p>
+            예약희망일 : <input type="date" name="last_date" min="2013-01-30"> <br>
+            시간 : <input type="time" name="time_form" min="09:00" max="18:00">
+            <hr>
+            <input type="submit" value="예약하기"/>
+            </p>
+        </form>
+    </article>
+    <article>
+        <div class="board_wrap">
+        <div class="board_title">
+            <a id="소통"></a><strong>Q&A 게시판</strong>
+            <p>빠르고 정확한 답변을 드리도록 하겠습니다.</p>
+        </div>
+        <div class="board_list_wrap">
+            <div class="board_list">
+                <div class="top">
+                    <div class="num">번호</div>
+                    <div class="title">제목</div>
+                    <div class="writer">글쓴이</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
+                </div>
+                <div>
+                    <div class="num">7</div>
+                    <div class="title"><a href="qandaview.html">아픈데 배가 고파요 이건 무슨 상황이죠??</a></div>
+                    <div class="writer">배고파</div>
+                    <div class="date">2023.8.14</div>
+                    <div class="count">424</div>
+                </div>
+                <div>
+                    <div class="num">6</div>
+                    <div class="title"><a href="qandaview.html">까먹었는데 찾을 수 있는 방법이 있나요?ㅠㅠ</a></div>
+                    <div class="writer">금붕어</div>
+                    <div class="date">2023.8.5</div>
+                    <div class="count">1,730</div>
+                </div>
+                <div>
+                    <div class="num">5</div>
+                    <div class="title"><a href="qandaview.html">예약조회는 어떻게 하나요?</a></div>
+                    <div class="writer">핑프</div>
+                    <div class="date">2023.7.29</div>
+                    <div class="count">88</div>
+                </div>
+                <div>
+                    <div class="num">4</div>
+                    <div class="title"><a href="qandaview.html">꼬르륵 소리를 참는 방법이 있을까요?</a></div>
+                    <div class="writer">꼬로록</div>
+                    <div class="date">2023.7.28</div>
+                    <div class="count">555</div>
+                </div>
+                <div>
+                    <div class="num">3</div>
+                    <div class="title"><a href="qandaview.html">시력 좋아지는 방법</a></div>
+                    <div class="writer">동태눈</div>
+                    <div class="date">2023.7.25</div>
+                    <div class="count">632</div>
+                </div>
+                <div>
+                    <div class="num">2</div>
+                    <div class="title"><a href="qandaview.html">정신이 맑아지는 방법</a></div>
+                    <div class="writer">좀비</div>
+                    <div class="date">2023.7.15</div>
+                    <div class="count">715</div>
+                </div>
+                <div>
+                    <div class="num">1</div>
+                    <div class="title"><a href="qandaview.html">피가 맛있는 이유</a></div>
+                    <div class="writer">드라큘라</div>
+                    <div class="date">2023.7.1</div>
+                    <div class="count">71</div>
+                </div>
+            </div>
+            <div class="board_page">
+                <a href="#" class="bt first"><<</a>
+                <a href="#" class="bt prev"><</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="bt next">></a>
+                <a href="#" class="bt last">>></a>
+            </div>
+            <div class="bt_wrap">
+                <a href="#" class="on">목록</a>
+                <a href="#">수정</a>
+            </div>
+        </div>
+       </div>
+    </article>
+</body>
+</html>
